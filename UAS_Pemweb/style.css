@@ -1,0 +1,175 @@
+body {
+  background-color: white !important;
+  font-family: 'Oswald', sans-serif;
+}
+
+/* awal navbar */
+.navbar {
+  background-color: rgb(166, 166, 166);
+  padding: 15px;
+}
+
+.navbar-nav .nav-link, .nav-item.dropdown {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 5px;
+  font-family: 'Oswald', sans-serif; /* Pastikan semua elemen menggunakan font yang sama */
+  font-size: 1.2rem;
+  transition: transform 0.3s ease, color 0.3s ease; /* Efek transisi untuk transformasi dan warna */
+}
+
+/* awal navbar */
+.navbar {
+  background-color: rgb(245, 245, 245);
+  padding: 15px;
+}
+
+.navbar-nav .nav-link, .nav-item.dropdown .nav-link{
+  position: relative;
+  display: inline-block;
+  padding-bottom: 5px;
+  font-family: 'Oswald', sans-serif; /* Pastikan semua elemen menggunakan font yang sama */
+  font-size: 1.2rem;
+  transition: transform 0.3s ease, color 0.3s ease; /* Efek transisi untuk transformasi dan warna */
+  text-decoration: none; /* Menghilangkan garis bawah pada tautan */
+  color: black; /* Warna default tulisan */
+}
+
+.navbar-nav .nav-link:hover, .nav-item.dropdown .nav-link:hover{
+  transform: translateY(-5px); /* Mengangkat tulisan sedikit saat hover */
+  color: #000000; /* Warna tulisan saat hover */
+  text-decoration: none; /* Pastikan tidak ada underline saat hover */
+}
+
+/* Mengatur efek hover pada dropdown item */
+.navbar-nav .nav-item .dropdown-menu .dropdown-item:hover{
+  transform: translateY(-2px); /* Mengangkat tulisan sedikit saat hover */
+  color: #000000; /* Warna tulisan saat hover */
+  text-decoration: none; /* Menghilangkan garis bawah pada tautan */
+}
+
+/* Default state for dropdown links */
+.navbar-nav .nav-item.dropdown .nav-link{
+  text-decoration: none; 
+  padding-bottom: 0;
+}
+
+.navbar-nav .nav-link::after, .nav-item.dropdown .nav-link::after{
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0; /* Mengatur tinggi menjadi 0 untuk menghilangkan garis bawah kecil */
+  display: none; /* Menyembunyikan pseudo-elemen sepenuhnya */
+  margin-top: 5px;
+  right: 0;
+  background: currentColor;
+  transition: width 0.3s ease;
+}
+
+.container-fluid .navbar-brand {
+  background: linear-gradient(to right, red, yellow);
+}
+
+.navbar-nav .nav-item .dropdown-menu .dropdown-item:focus,
+.navbar-nav .nav-item.dropdown .nav-link:focus {
+  outline: none; /* Remove the outline */
+  background-color: transparent; /* Remove the background color */
+}
+
+/* akhir navbar */
+
+.no-underline {
+  text-decoration: none;
+}
+
+/* berita */
+.card-title h5{
+  text-decoration: none;
+}
+
+/* mengatur logo */
+.premier-leguage,
+.bunders-liga,
+.laliga,
+.serie-A,
+.ligue-1 {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  padding: 20px;
+}
+
+.premier-leguage img,
+.bunders-liga img,
+.laliga img,
+.serie-A img,
+.ligue-1 img {
+  max-width: 50px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.premier-leguage h3,
+.bunders-liga h3,
+.laliga h3,
+.serie-A h3,
+.ligue-1 h3 {
+  margin-top: 1rem;
+  color: black;
+}
+
+.Liga-Liga a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+.Liga-Liga a:hover {
+  color: rgb(0, 0, 0);
+  transform: translateY(-5px);
+  transition: transform 0.3s ease;
+}
+
+.berita {
+  justify-content: end;
+  align-items: end;
+  padding: 20px;
+}
+
+.berita img {
+  height: auto;
+  margin-right: 10px;
+}
+
+.tabel-Epl {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  padding: 10px;
+}
+
+.tabel-Epl img {
+  max-width: 50px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.tabel-Epl h3 {
+  margin-top: 1rem;
+}
+
+.tabel,
+.name-tag {
+  display: flex;
+  justify-content: center;
+}
+
+.news-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.footer {
+  background-color: rgb(166, 166, 166);
+  /* margin-top: 5px; */
+}
